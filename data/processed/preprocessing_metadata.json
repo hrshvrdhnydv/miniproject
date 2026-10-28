@@ -1,0 +1,45 @@
+{
+  "source_file": "data\\raw\\german.data",
+  "input_record_count": 1000,
+  "input_feature_count": 20,
+  "training_rows": 800,
+  "test_rows": 200,
+  "test_size": 0.2,
+  "random_state": 42,
+  "target_column": "credit_risk",
+  "target_mapping_file": "target_mapping.json",
+  "target_counts": {
+    "good-risk": 700,
+    "bad-risk": 300
+  },
+  "categorical_features": [
+    "checking_status",
+    "credit_history",
+    "purpose",
+    "savings_status",
+    "employment_since",
+    "personal_status_sex",
+    "other_debtors",
+    "property",
+    "other_installment_plans",
+    "housing",
+    "job",
+    "telephone",
+    "foreign_worker"
+  ],
+  "numerical_features": [
+    "duration_months",
+    "credit_amount",
+    "installment_rate",
+    "residence_since",
+    "age_years",
+    "existing_credits",
+    "num_dependents"
+  ],
+  "transformed_feature_count": 61,
+  "transformed_feature_names_file": "feature_names.json",
+  "preprocessor_file": "preprocessor.joblib",
+  "fit_scope": "training data only",
+  "pandas_version": "3.1.0",
+  "scikit_learn_version": "1.9.1"
+}

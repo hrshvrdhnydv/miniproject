@@ -1,0 +1,14 @@
+{
+  "target_column": "credit_risk",
+  "source_column_position": 21,
+  "source_codes": {
+    "1": "good-risk",
+    "2": "bad-risk"
+  },
+  "source_meaning": {
+    "1": "Good credit risk",
+    "2": "Bad credit risk"
+  },
+  "source": "UCI Statlog (German Credit Data), original german.data",
+  "documentation": "https://archive.ics.uci.edu/dataset/144/statlog+german+credit+data"
+}

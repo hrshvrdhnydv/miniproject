@@ -1,0 +1,33 @@
+{
+  "positive_class": "bad-risk",
+  "metric_definitions": {
+    "precision_recall_f1": "binary averaging, bad-risk is the positive class",
+    "accuracy_roc_auc": "single scalar metrics; no class averaging",
+    "roc_auc": "uses predicted probability for bad-risk",
+    "confusion_matrix": "rows are actual; columns are predicted"
+  },
+  "models": {
+    "RandomForestClassifier": {
+      "accuracy": 0.715,
+      "precision": 0.5223880597014925,
+      "recall": 0.5833333333333334,
+      "f1_score": 0.5511811023622047,
+      "roc_auc": 0.7701190476190476
+    },
+    "XGBClassifier": {
+      "accuracy": 0.735,
+      "precision": 0.5660377358490566,
+      "recall": 0.5,
+      "f1_score": 0.5309734513274337,
+      "roc_auc": 0.764047619047619
+    }
+  },
+  "difference_xgboost_minus_random_forest": {
+    "accuracy": 0.020000000000000018,
+    "precision": 0.0436496761475641,
+    "recall": -0.08333333333333337,
+    "f1_score": -0.020207651034771068,
+    "roc_auc": -0.0060714285714286165
+  },
+  "interpretation": "Differences are descriptive results from this saved test split; they do not establish general superiority."
+}

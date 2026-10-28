@@ -1,0 +1,76 @@
+{
+  "model": "XGBClassifier",
+  "positive_class": "bad-risk",
+  "averaging_method": "binary; precision, recall, and F1 use bad-risk as pos_label. Accuracy and ROC-AUC are not averaged.",
+  "test_rows": 200,
+  "test_class_counts": {
+    "good-risk": 140,
+    "bad-risk": 60
+  },
+  "metrics": {
+    "accuracy": 0.735,
+    "precision": 0.5660377358490566,
+    "recall": 0.5,
+    "f1_score": 0.5309734513274337,
+    "roc_auc": 0.764047619047619
+  },
+  "roc_auc_unavailable_reason": null,
+  "confusion_matrix": {
+    "labels_in_row_and_column_order": [
+      "good-risk",
+      "bad-risk"
+    ],
+    "rows_are_actual_columns_are_predicted": true,
+    "counts": [
+      [
+        117,
+        23
+      ],
+      [
+        30,
+        30
+      ]
+    ]
+  },
+  "model_parameters": {
+    "model": "XGBClassifier",
+    "objective": "binary:logistic",
+    "target_encoding": {
+      "good-risk": 0,
+      "bad-risk": 1
+    },
+    "prediction_labels": {
+      "0": "good-risk",
+      "1": "bad-risk"
+    },
+    "positive_class": "bad-risk",
+    "binary_positive_code": 1,
+    "random_state": 42,
+    "cv_random_state": 42,
+    "cv_folds": 3,
+    "cv_scoring": "roc_auc",
+    "cv_best_score_training_only": 0.7977024754183198,
+    "best_params": {
+      "classifier__learning_rate": 0.1,
+      "classifier__max_depth": 2
+    },
+    "n_estimators": 200,
+    "training_class_counts": {
+      "good-risk": 560,
+      "bad-risk": 240
+    },
+    "split_random_state": 42,
+    "preprocessor_fit_scope": "refit on full saved training split after CV",
+    "input_feature_count": 20,
+    "transformed_feature_count": 61,
+    "metric_definitions": {
+      "precision_recall_f1": "binary averaging, bad-risk is the positive class",
+      "accuracy_roc_auc": "single scalar metrics; no class averaging",
+      "roc_auc": "uses predicted probability for bad-risk",
+      "confusion_matrix": "rows are actual; columns are predicted"
+    },
+    "xgboost_version": "3.2.0",
+    "scikit_learn_version": "1.9.1"
+  },
+  "figure": "confusion_matrix.png"
+}

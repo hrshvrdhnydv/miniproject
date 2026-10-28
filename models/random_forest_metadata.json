@@ -1,0 +1,14 @@
+{
+  "n_estimators": 300,
+  "random_state": 42,
+  "class_weight": "balanced",
+  "n_jobs": -1,
+  "split_random_state": 42,
+  "training_class_counts": {
+    "good-risk": 560,
+    "bad-risk": 240
+  },
+  "preprocessor_source": "data\\processed\\preprocessor.joblib",
+  "preprocessor_fit_scope": "training data only",
+  "transformed_feature_count": 61
+}

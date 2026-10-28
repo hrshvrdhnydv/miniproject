@@ -1,0 +1,222 @@
+:root {
+  color-scheme: dark;
+  --xai-bg: #0b1020;
+  --xai-panel: #151f35;
+  --xai-panel-raised: #1a2741;
+  --xai-blue: #4f8cff;
+  --xai-violet: #8b5cf6;
+  --xai-text: #f4f7ff;
+  --xai-muted: #a6b2c8;
+  --xai-green: #22c55e;
+  --xai-amber: #f59e0b;
+  --xai-red: #ef4444;
+  --xai-border: rgba(166, 178, 200, 0.16);
+}
+
+.xai-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.4rem 0 1.4rem;
+  padding: 1.05rem 1.25rem;
+  border: 1px solid var(--xai-border);
+  border-radius: 18px;
+  background:
+    radial-gradient(ellipse at 92% 10%, rgba(139, 92, 246, 0.25), transparent 38%),
+    linear-gradient(112deg, #121c32, #182846 62%, #18335b);
+  color: var(--xai-text);
+}
+
+.xai-brand-mark {
+  display: grid;
+  width: 2.8rem;
+  height: 2.8rem;
+  flex: 0 0 2.8rem;
+  place-items: center;
+  border: 1px solid rgba(79, 140, 255, 0.42);
+  border-radius: 13px;
+  background: rgba(79, 140, 255, 0.14);
+  color: #a9c8ff;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+.xai-brand-copy {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.xai-brand-name {
+  color: var(--xai-text);
+  font-size: 1.02rem;
+  font-weight: 720;
+  letter-spacing: 0.01em;
+}
+
+.xai-brand-subtitle {
+  color: var(--xai-muted);
+  font-size: 0.79rem;
+}
+
+.xai-brand-tag {
+  margin-left: auto;
+  padding: 0.38rem 0.72rem;
+  border: 1px solid rgba(166, 178, 200, 0.2);
+  border-radius: 999px;
+  color: #c6d6f5;
+  font-size: 0.7rem;
+  font-weight: 650;
+  letter-spacing: 0.045em;
+  white-space: nowrap;
+}
+
+.xai-sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.75rem 0.65rem;
+  color: var(--xai-text);
+}
+
+.xai-sidebar-brand .xai-brand-mark {
+  width: 2.35rem;
+  height: 2.35rem;
+  flex-basis: 2.35rem;
+  border-radius: 11px;
+}
+
+.xai-sidebar-brand .xai-brand-name {
+  font-size: 0.92rem;
+}
+
+.xai-sidebar-brand .xai-brand-subtitle {
+  font-size: 0.72rem;
+}
+
+.xai-hero {
+  position: relative;
+  overflow: hidden;
+  margin: 0.25rem 0 1.4rem;
+  padding: clamp(1.4rem, 3.2vw, 2.5rem);
+  border: 1px solid rgba(79, 140, 255, 0.24);
+  border-radius: 22px;
+  background:
+    radial-gradient(ellipse at 88% 4%, rgba(139, 92, 246, 0.24), transparent 36%),
+    radial-gradient(ellipse at 76% 108%, rgba(79, 140, 255, 0.2), transparent 44%),
+    linear-gradient(125deg, #121d33, #182744 72%, #17233c);
+}
+
+.xai-eyebrow {
+  margin: 0 0 0.65rem;
+  color: #a9c8ff;
+  font-size: 0.76rem;
+  font-weight: 720;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.xai-hero-title {
+  max-width: 48rem;
+  margin: 0;
+  color: var(--xai-text);
+  font-size: clamp(1.5rem, 3.6vw, 2.45rem);
+  font-weight: 760;
+  letter-spacing: -0.035em;
+  line-height: 1.13;
+}
+
+.xai-hero-copy {
+  max-width: 47rem;
+  margin: 0.8rem 0 0;
+  color: #c0cbe0;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.xai-section-label {
+  margin: 0 0 0.45rem;
+  color: #a9c8ff;
+  font-size: 0.72rem;
+  font-weight: 720;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.xai-flow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.7rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.xai-flow-step {
+  min-height: 5.2rem;
+  padding: 0.85rem;
+  border: 1px solid var(--xai-border);
+  border-radius: 14px;
+  background: linear-gradient(145deg, rgba(26, 39, 65, 0.95), rgba(21, 31, 53, 0.8));
+}
+
+.xai-flow-number {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #a9c8ff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+}
+
+.xai-flow-title {
+  color: var(--xai-text);
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+.xai-session-summary {
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(79, 140, 255, 0.24);
+  border-radius: 15px;
+  background: rgba(79, 140, 255, 0.08);
+  color: var(--xai-text);
+}
+
+.xai-session-summary strong {
+  color: #a9c8ff;
+}
+
+@media (max-width: 700px) {
+  .xai-brand {
+    gap: 0.72rem;
+    padding: 0.82rem;
+    border-radius: 16px;
+  }
+
+  .xai-brand-mark {
+    width: 2.45rem;
+    height: 2.45rem;
+    flex-basis: 2.45rem;
+  }
+
+  .xai-brand-name {
+    font-size: 0.91rem;
+  }
+
+  .xai-brand-subtitle {
+    font-size: 0.71rem;
+  }
+
+  .xai-brand-tag {
+    display: none;
+  }
+
+  .xai-flow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 380px) {
+  .xai-flow {
+    grid-template-columns: 1fr;
+  }
+}
